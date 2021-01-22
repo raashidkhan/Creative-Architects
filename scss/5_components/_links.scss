@@ -1,0 +1,25 @@
+.primary-link {
+    padding: 1.6rem 2.4rem;
+    background-color: $primary-600;
+    color: $gray-0;
+    border-radius: $bora-small;
+    display: inline-block;
+    text-align: center;
+
+    &:hover {
+        color: $gray-100;
+        background-color: $primary-500;
+    }
+}
+
+.primary-link-small {
+    padding: 0.8rem 1.6rem;
+    background-color: $primary-500;
+    color: $gray-0;
+    border-radius: $bora-small;
+
+    &:hover {
+        color: $gray-100;
+        background-color: $primary-400;
+    }
+}

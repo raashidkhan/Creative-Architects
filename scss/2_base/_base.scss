@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
 
 *,
 *::after,
@@ -11,6 +11,14 @@
 
 html {
     font-size: 62.5%;
+
+    @include breakpoint(twok-above) {
+        font-size: 200%;
+    }
+
+    @include breakpoint(large-desktop) {
+        font-size: 100%;
+    }
 }
 
 ::selection {
@@ -22,13 +30,6 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
 
-    @include breakpoint(twok-above) {
-        font-size: 200%;
-    }
-
-    @include breakpoint(large-desktop) {
-        font-size: 100%;
-    }
 
 
 

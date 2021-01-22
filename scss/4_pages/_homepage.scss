@@ -1,0 +1,70 @@
+.hero {
+    width: 100vw;
+    padding: 5vw;
+    position: relative;
+    min-height: 100vh;
+
+    @include breakpoint(tab) {
+
+        padding-top: 8rem;
+    }
+
+    &-content {
+        position: absolute;
+        z-index: 10;
+        width: 40%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        em {
+            display: block;
+            margin-bottom: 3.2rem;
+        }
+
+        @include breakpoint(tab) {
+            position: relative;
+            top: 0;
+            transform: none;
+            width: 100%;
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    &-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        @include breakpoint(tab) {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 40rem;
+            overflow: hidden;
+        }
+
+        @include breakpoint(phone) {
+            height: 30rem;
+        }
+
+
+        img {
+            position: absolute;
+            transform: translateX(100%);
+            transition: 300ms ease;
+            z-index: 3;
+        }
+    }
+}
+
+.hero-images img.wasActiveImage {
+    transform: translateX(-100%);
+}
+
+.hero-images img.activeImage {
+    transform: translateX(0);
+    z-index: 5;
+
+}
