@@ -304,58 +304,6 @@
     }
 }
 
-.contact {
-    width: 100vw;
-    padding: 5vw;
-
-    &-banner {
-        height: 40rem;
-        box-shadow: $boxShadow-200;
-        border-radius: $bora-small;
-        overflow-x: hidden;
-        overflow-y: hidden;
-
-
-
-
-    }
-
-    &-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-
-        @include breakpoint(tab) {
-            flex-direction: column;
-        }
-
-        &--img {
-            width: 50%;
-            height: 60rem;
-            position: relative;
-            border: 1.6rem solid $gray-0;
-            margin-top: -5vw;
-            z-index: 8;
-            box-shadow: $boxShadow-200;
-            border-radius: $bora-small;
-            overflow-x: hidden;
-            overflow-y: hidden;
-
-            @include breakpoint(tab) {
-                width: 100%;
-            }
-        }
-
-        &--desc {
-            width: 50%;
-            padding: 5vw;
-
-            @include breakpoint(tab) {
-                width: 100%;
-            }
-        }
-    }
-}
 
 
 .testimonials {
@@ -458,4 +406,109 @@
 
     //opacity: 1;
 
+}
+
+.contact {
+    width: 100vw;
+    padding: 5vw;
+
+    &-banner {
+        height: 40rem;
+        box-shadow: $boxShadow-200;
+        border-radius: $bora-small;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+
+
+
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include breakpoint(tab) {
+            flex-direction: column;
+        }
+
+        &--img {
+            width: 50%;
+            height: 60rem;
+            position: relative;
+            border: 1.6rem solid $gray-0;
+            margin-top: -5vw;
+            z-index: 8;
+            box-shadow: $boxShadow-200;
+            border-radius: $bora-small;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+            @include breakpoint(tab) {
+                width: 100%;
+                margin-top: 5vw;
+                border: none;
+            }
+        }
+
+        &--desc {
+            width: 50%;
+            padding: 5vw;
+
+            @include breakpoint(tab) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.homeGallery {
+    width: 100vw;
+
+
+    h2 {
+        padding: 5vw;
+        padding-bottom: 0;
+    }
+
+
+    &-swiper {
+
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: 20%;
+        grid-auto-flow: column;
+        grid-template-rows: 40rem;
+        grid-auto-columns: 20%;
+        align-items: stretch;
+        gap: 2.5vw;
+        overflow: scroll hidden;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        cursor: pointer;
+
+        @include breakpoint(tab) {
+            grid-template-columns: 45%;
+            grid-auto-columns: 45%;
+        }
+
+        @include breakpoint(phone) {
+            grid-template-columns: 80%;
+            grid-auto-columns: 80%;
+        }
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::-webkit-scrollbar {
+            background-color: transparent;
+            height: 1px;
+        }
+    }
 }

@@ -1,0 +1,61 @@
+.footer {
+    width: 100vw;
+    padding: 5vw;
+    background-color: $primary-200;
+
+    &-para {
+        width: 70%;
+        margin: 0 auto;
+        padding: 2.5vw;
+        background-color: $primary-0;
+        box-shadow: $boxShadow-200;
+        border-radius: $bora-small;
+
+        @include breakpoint(phone) {
+            width: 100%;
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: right;
+
+        @include breakpoint(phone) {
+            flex-direction: column;
+        }
+
+        &--logo {
+            @include breakpoint(phone) {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 5vw;
+            }
+        }
+
+        &--action {
+            @include breakpoint(phone) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+
+    }
+
+    &-copy {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+
+    li a:hover {
+        color: $primary-600;
+    }
+}

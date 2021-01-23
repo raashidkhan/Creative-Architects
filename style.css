@@ -242,6 +242,62 @@ h6 {
   transform: translateY(-0.8rem) rotate(-45deg);
 }
 
+.footer {
+  width: 100vw;
+  padding: 5vw;
+  background-color: #b5d8f0;
+}
+.footer-para {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2.5vw;
+  background-color: #f6fafd;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.25rem;
+}
+@media (max-width: 680px) {
+  .footer-para {
+    width: 100%;
+  }
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: right;
+}
+@media (max-width: 680px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 680px) {
+  .footer-content--logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+}
+@media (max-width: 680px) {
+  .footer-content--action {
+    width: 100%;
+    text-align: center;
+  }
+}
+.footer-copy {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.footer-links li a:hover {
+  color: #006fbe;
+}
+
 .hero {
   width: 100vw;
   padding: 5vw;
@@ -499,54 +555,6 @@ h6 {
 .project-card:nth-child(2n) figcaption {
   bottom: 0;
 }
-.contact {
-  width: 100vw;
-  padding: 5vw;
-}
-.contact-banner {
-  height: 40rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  border-radius: 0.25rem;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-@media (max-width: 900px) {
-  .contact-content {
-    flex-direction: column;
-  }
-}
-.contact-content--img {
-  width: 50%;
-  height: 60rem;
-  position: relative;
-  border: 1.6rem solid #f9f9fa;
-  margin-top: -5vw;
-  z-index: 8;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  border-radius: 0.25rem;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-@media (max-width: 900px) {
-  .contact-content--img {
-    width: 100%;
-  }
-}
-.contact-content--desc {
-  width: 50%;
-  padding: 5vw;
-}
-@media (max-width: 900px) {
-  .contact-content--desc {
-    width: 100%;
-  }
-}
-
 .testimonials {
   width: 100vw;
   padding: 5vw;
@@ -622,6 +630,100 @@ h6 {
 .testimonial-card.activeTest {
   transform: translateX(0);
   z-index: 5;
+}
+
+.contact {
+  width: 100vw;
+  padding: 5vw;
+}
+.contact-banner {
+  height: 40rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.25rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+  }
+}
+.contact-content--img {
+  width: 50%;
+  height: 60rem;
+  position: relative;
+  border: 1.6rem solid #f9f9fa;
+  margin-top: -5vw;
+  z-index: 8;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.25rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+@media (max-width: 900px) {
+  .contact-content--img {
+    width: 100%;
+    margin-top: 5vw;
+    border: none;
+  }
+}
+.contact-content--desc {
+  width: 50%;
+  padding: 5vw;
+}
+@media (max-width: 900px) {
+  .contact-content--desc {
+    width: 100%;
+  }
+}
+
+.homeGallery {
+  width: 100vw;
+}
+.homeGallery h2 {
+  padding: 5vw;
+  padding-bottom: 0;
+}
+.homeGallery-swiper {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 20%;
+  grid-auto-flow: column;
+  grid-template-rows: 40rem;
+  grid-auto-columns: 20%;
+  align-items: stretch;
+  gap: 2.5vw;
+  overflow: scroll hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .homeGallery-swiper {
+    grid-template-columns: 45%;
+    grid-auto-columns: 45%;
+  }
+}
+@media (max-width: 680px) {
+  .homeGallery-swiper {
+    grid-template-columns: 80%;
+    grid-auto-columns: 80%;
+  }
+}
+.homeGallery-swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.homeGallery-swiper::-webkit-scrollbar {
+  background-color: transparent;
+  height: 1px;
 }
 
 .primary-link {
