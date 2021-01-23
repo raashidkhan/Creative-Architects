@@ -10,6 +10,7 @@
         background-color: $primary-0;
         box-shadow: $boxShadow-200;
         border-radius: $bora-small;
+        margin-bottom: 5vw;
 
         @include breakpoint(phone) {
             width: 100%;

@@ -11,7 +11,7 @@ if (heroImages) {
   const imageArray = Array.from(
     document.querySelectorAll('.hero-images-slide')
   );
-  console.log(imageArray);
+
   imageArray[0].classList.add('activeImage');
   let counterForImage = 0;
   const imageSlide = (slideArray, classToAdd, classToRemove) => {
@@ -68,7 +68,7 @@ const testimonials = document.querySelector('.testimonials');
 if (testimonials) {
   const imageArray = Array.from(document.querySelectorAll('.testimonial-card'));
   const nextTestBtn = document.querySelector('.nextTestimonial');
-  console.log(imageArray);
+
   imageArray[0].classList.add('activeTest');
   let counterForImage = 0;
   const imageSlide = (slideArray, classToAdd, classToRemove) => {

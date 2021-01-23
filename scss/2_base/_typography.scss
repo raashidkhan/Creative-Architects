@@ -10,13 +10,19 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
     font-family: $heading-font;
     font-weight: 500;
 }
 
 .page-heading {
     font-size: $step04;
+
+    @include breakpoint(phone) {
+        font-size: $step03;
+        line-height: 1.3;
+    }
 }
 
 .section-heading {

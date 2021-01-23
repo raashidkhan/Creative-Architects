@@ -22,8 +22,8 @@ html {
 }
 
 ::selection {
-    // background-color: $theme-green;
-    // color: $white;
+    background-color: $secondary-500;
+    color: $gray-0;
 }
 
 body {
@@ -34,13 +34,13 @@ body {
 
 
     &::-webkit-scrollbar {
-        // background-color: $light-grey;
+        background-color: $gray-100;
         width: 1rem;
         border-radius: 0.5rem;
     }
 
     &::-webkit-scrollbar-thumb {
-        // background-color: $black;
+        background-color: $secondary-400;
         border-radius: 0.5rem;
     }
 
@@ -52,6 +52,12 @@ body {
 a {
     text-decoration: none;
     color: currentColor;
+
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba($secondary-500, 0.7);
+    }
 }
 
 ul {
