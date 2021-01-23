@@ -28,3 +28,13 @@
 .mb-48 {
     margin-bottom: 4.8rem !important;
 }
+
+.twoCol {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &>* {
+        width: calc(50% - 2.5vw);
+    }
+}

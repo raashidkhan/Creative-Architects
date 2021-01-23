@@ -17,9 +17,26 @@
     background-color: $primary-500;
     color: $gray-0;
     border-radius: $bora-small;
+    display: inline-block;
+    text-align: center;
 
     &:hover {
         color: $gray-100;
         background-color: $primary-400;
+    }
+}
+
+.secondary-link {
+    padding: 0.8rem 1.6rem;
+    background-color: transparent;
+    border: 2px solid $primary-400;
+    color: $primary-300;
+    border-radius: $bora-small;
+    display: inline-block;
+    text-align: center;
+
+    &:hover {
+        color: $gray-100;
+        background-color: $primary-500;
     }
 }
