@@ -1,6 +1,6 @@
 .primary-link {
     padding: 1.6rem 2.4rem;
-    background-color: $primary-600;
+    background-color: $primary-500;
     color: $gray-0;
     border-radius: $bora-small;
     display: inline-block;
@@ -16,6 +16,7 @@
     padding: 0.8rem 1.6rem;
     background-color: $primary-500;
     color: $gray-0;
+    border: 2px solid $primary-500;
     border-radius: $bora-small;
     display: inline-block;
     text-align: center;

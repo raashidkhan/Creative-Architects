@@ -2,10 +2,10 @@
     width: 100vw;
     padding: 5vw;
     position: relative;
-    //min-height: 100vh;
+    height: 100vh;
 
     @include breakpoint(tab) {
-
+        height: auto;
         padding-top: 8rem;
     }
 
@@ -82,6 +82,7 @@
     &-image {
         width: 50%;
         // max-height: 60rem;
+        height: 60rem;
         border: 1.6rem solid $gray-0;
         //box-shadow: $boxShadow-300;
         margin-top: -5vw;
@@ -301,4 +302,160 @@
         // margin-top: -5vw;
 
     }
+}
+
+.contact {
+    width: 100vw;
+    padding: 5vw;
+
+    &-banner {
+        height: 40rem;
+        box-shadow: $boxShadow-200;
+        border-radius: $bora-small;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+
+
+
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include breakpoint(tab) {
+            flex-direction: column;
+        }
+
+        &--img {
+            width: 50%;
+            height: 60rem;
+            position: relative;
+            border: 1.6rem solid $gray-0;
+            margin-top: -5vw;
+            z-index: 8;
+            box-shadow: $boxShadow-200;
+            border-radius: $bora-small;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+            @include breakpoint(tab) {
+                width: 100%;
+            }
+        }
+
+        &--desc {
+            width: 50%;
+            padding: 5vw;
+
+            @include breakpoint(tab) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.testimonials {
+    width: 100vw;
+    padding: 5vw;
+
+    &-container {}
+
+    &-image {
+        display: flex;
+        justify-content: flex-end;
+
+
+        @include breakpoint(tab) {
+            display: none;
+        }
+
+        img {
+            max-width: 35rem;
+            display: block;
+        }
+    }
+
+}
+
+
+
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    h2 {
+        width: 70%;
+    }
+
+    button {
+        background: none;
+        border: none;
+        //padding: 0.8rem;
+        display: block;
+        position: relative;
+        cursor: pointer;
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 1.6rem;
+
+            background-color: $primary-300;
+            z-index: -1;
+
+
+        }
+
+        svg {
+            display: block;
+        }
+
+
+    }
+}
+
+.testimonial-content {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.testimonial-card {
+    position: relative;
+    font-size: $step01;
+    transform: translateX(100%);
+    transition: 300ms ease;
+    background-color: $primary-100;
+    padding: 2.5vw;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    //opacity: 0;
+
+    p {
+        margin-bottom: 1.6rem;
+    }
+}
+
+.testimonial-card.prevTest {
+    transform: translateX(-100%);
+
+    //opacity: 0;
+}
+
+.testimonial-card.activeTest {
+    transform: translateX(0);
+    z-index: 5;
+
+    //opacity: 1;
+
 }
