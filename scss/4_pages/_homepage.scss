@@ -2,7 +2,7 @@
     width: 100vw;
     padding: 5vw;
     position: relative;
-    min-height: 100vh;
+    //min-height: 100vh;
 
     @include breakpoint(tab) {
 
@@ -75,27 +75,49 @@
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint(tab) {
+        flex-direction: column-reverse;
+    }
+
     &-image {
         width: 50%;
-        max-height: 60rem;
+        // max-height: 60rem;
         border: 1.6rem solid $gray-0;
         //box-shadow: $boxShadow-300;
         margin-top: -5vw;
         position: relative;
         z-index: 8;
 
+        @include breakpoint(tab) {
+            width: 100%;
+            margin-top: 0;
+            border: none;
+
+        }
+
         img {
             object-position: bottom;
         }
+
+
     }
 
     &-content {
         width: 50%;
 
+        @include breakpoint(tab) {
+            width: 100%;
+            margin-bottom: 5vw;
+        }
+
         &>p {
             font-size: $step02;
             padding: 5vw;
             position: relative;
+
+            @include breakpoint(tab) {
+                margin-bottom: 5vw;
+            }
 
             &::after {
                 content: "";
@@ -106,6 +128,10 @@
                 width: 0.4rem;
                 height: calc(100% - 8vw);
                 background-color: $primary-400;
+
+                @include breakpoint(tab) {
+                    left: 0;
+                }
             }
 
         }
@@ -117,6 +143,10 @@
             background-color: $primary-100;
             position: relative;
             z-index: 10;
+
+            @include breakpoint(tab) {
+                margin-left: 0;
+            }
         }
     }
 }
@@ -150,8 +180,18 @@
             justify-content: space-between;
             align-items: flex-start;
 
+            @include breakpoint(tab) {
+                flex-direction: column;
+                margin-bottom: 5vw;
+            }
+
             p {
                 width: 60%;
+
+                @include breakpoint(tab) {
+                    width: 100%;
+                    margin-bottom: 5vw;
+                }
             }
         }
 
@@ -171,6 +211,16 @@
         overflow-x: scroll;
         overflow-y: hidden;
         cursor: pointer;
+
+        @include breakpoint(tab) {
+            grid-template-columns: 60%;
+            grid-auto-columns: 60%;
+        }
+
+        @include breakpoint(phone) {
+            grid-template-columns: 80%;
+            grid-auto-columns: 80%;
+        }
 
         img {
             width: 100%;

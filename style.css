@@ -109,8 +109,19 @@ h6 {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 900px) {
+  .twoCol {
+    flex-direction: column;
+  }
+}
 .twoCol > * {
   width: calc(50% - 2.5vw);
+}
+@media (max-width: 900px) {
+  .twoCol > * {
+    width: 100%;
+    margin-bottom: 5vw;
+  }
 }
 
 .navbar {
@@ -235,7 +246,6 @@ h6 {
   width: 100vw;
   padding: 5vw;
   position: relative;
-  min-height: 100vh;
 }
 @media (max-width: 900px) {
   .hero {
@@ -305,13 +315,24 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+}
 .about-image {
   width: 50%;
-  max-height: 60rem;
   border: 1.6rem solid #f9f9fa;
   margin-top: -5vw;
   position: relative;
   z-index: 8;
+}
+@media (max-width: 900px) {
+  .about-image {
+    width: 100%;
+    margin-top: 0;
+    border: none;
+  }
 }
 .about-image img {
   object-position: bottom;
@@ -319,10 +340,21 @@ h6 {
 .about-content {
   width: 50%;
 }
+@media (max-width: 900px) {
+  .about-content {
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+}
 .about-content > p {
   font-size: 2.8rem;
   padding: 5vw;
   position: relative;
+}
+@media (max-width: 900px) {
+  .about-content > p {
+    margin-bottom: 5vw;
+  }
 }
 .about-content > p::after {
   content: "";
@@ -334,6 +366,11 @@ h6 {
   height: calc(100% - 8vw);
   background-color: #5aa7de;
 }
+@media (max-width: 900px) {
+  .about-content > p::after {
+    left: 0;
+  }
+}
 .about-content > article {
   font-size: 2.1rem;
   padding: 5vw;
@@ -341,6 +378,11 @@ h6 {
   background-color: #e2eff9;
   position: relative;
   z-index: 10;
+}
+@media (max-width: 900px) {
+  .about-content > article {
+    margin-left: 0;
+  }
 }
 
 .whyUs {
@@ -360,8 +402,20 @@ h6 {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 900px) {
+  .projects-heading > div {
+    flex-direction: column;
+    margin-bottom: 5vw;
+  }
+}
 .projects-heading > div p {
   width: 60%;
+}
+@media (max-width: 900px) {
+  .projects-heading > div p {
+    width: 100%;
+    margin-bottom: 5vw;
+  }
 }
 .projects-grid {
   width: 100%;
@@ -377,6 +431,18 @@ h6 {
   overflow-x: scroll;
   overflow-y: hidden;
   cursor: pointer;
+}
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 60%;
+    grid-auto-columns: 60%;
+  }
+}
+@media (max-width: 680px) {
+  .projects-grid {
+    grid-template-columns: 80%;
+    grid-auto-columns: 80%;
+  }
 }
 .projects-grid img {
   width: 100%;
