@@ -1,0 +1,227 @@
+.aboutHero {
+    width: 100vw;
+    padding: 10vw;
+    padding-bottom: 5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 10vw);
+
+        height: 50%;
+        background-color: $primary-300;
+        z-index: -1;
+    }
+
+    &-left {
+        width: calc(35% - 2.5vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &--image {
+            box-shadow: $boxShadow-200;
+            border-radius: $bora-small;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+    }
+
+    &-right {
+        width: calc(65% - 2.5vw);
+        box-shadow: $boxShadow-200;
+        border-radius: $bora-small;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+    &-bottom {
+        width: 100%;
+        margin-top: 5vw;
+        display: flex;
+        justify-content: space-between;
+
+        &--image {
+            width: calc(35% - 2.5vw);
+            box-shadow: $boxShadow-200;
+            border-radius: $bora-small;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        p {
+            width: calc(65% - 2.5vw);
+            font-size: $step01;
+        }
+    }
+}
+
+.aboutPara {
+    width: 100vw;
+    padding: 5vw;
+
+
+
+    &-content {
+        background-color: $primary-100;
+        padding: 5vw;
+
+
+        &>* {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+}
+
+#aboutMisVis {
+    width: 100vw;
+    padding: 5vw;
+    position: relative;
+
+    @include breakpoint(tab-land) {
+        padding: 5rem 4rem;
+    }
+
+    @include breakpoint(phone) {
+        padding: 5rem 2rem;
+    }
+
+
+    &::after {
+        content: "";
+        background-color: $primary-100;
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        right: 0;
+
+        @include breakpoint(tab-land) {
+            display: none;
+        }
+
+
+    }
+
+    .aboutMisVis {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        @include breakpoint(tab-land) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &--title {
+            width: 25%;
+            position: relative;
+
+
+            @include breakpoint(tab-land) {
+                width: 100%;
+            }
+
+
+            h2 {
+
+
+
+                @include breakpoint(tab-land) {
+                    width: 100%;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        &--image {
+            width: 25%;
+            box-shadow: $boxShadow-200;
+            border-radius: $bora-small;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+            @include breakpoint(tab-land) {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 3.2rem;
+                padding: 0 4rem;
+            }
+        }
+
+        &--content {
+            width: 40%;
+
+
+            @include breakpoint(tab-land) {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            article h3 {
+                color: $secondary-500;
+                font-weight: 700;
+                font-size: $step01;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.aboutServices {
+    width: 100vw;
+    padding: 5vw;
+
+    &-content {
+
+        &--res {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 40%;
+                box-shadow: $boxShadow-200;
+                border-radius: $bora-small;
+                overflow-x: hidden;
+                overflow-y: hidden;
+
+            }
+
+            &>div {
+                width: 50%;
+            }
+        }
+
+        &--com {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 40%;
+                box-shadow: $boxShadow-200;
+                border-radius: $bora-small;
+                overflow-x: hidden;
+                overflow-y: hidden;
+
+            }
+
+            &>div {
+                width: 50%;
+            }
+        }
+    }
+}

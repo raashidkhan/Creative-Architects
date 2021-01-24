@@ -8,6 +8,8 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
+    box-shadow: $boxShadow-300;
+
 
     &:hover {
         color: $gray-100;
@@ -23,6 +25,8 @@
     border-radius: $bora-small;
     display: inline-block;
     text-align: center;
+    box-shadow: $boxShadow-300;
+
 
     &:hover {
         color: $gray-100;
@@ -38,6 +42,8 @@
     border-radius: $bora-small;
     display: inline-block;
     text-align: center;
+    box-shadow: $boxShadow-300;
+
 
     &:hover {
         color: $gray-100;
