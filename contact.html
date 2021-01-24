@@ -9,8 +9,120 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <a href="/index.html" class="navbar-logo">
+            <img src="images/logo.svg" class="scale-image" alt="">
+        </a>
+        <ul class="navbar-mobile navbar-mobile-js">
+
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Projects</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+
+        </ul>
+        <ul class="navbar-desktop">
+            <li><a href="/products.html">Projects</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="tel:+9898283763" class="primary-link-small call-btn">Call Us</a></li>
+        </ul>
+
+        <div class="navbar-menuIcon">
+            <button class="menuBtn"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contactPage-hero twoCol">
+            <div class="contactPage-hero--content">
+                <h2 class="section-heading mb-24">Contact Us</h2>
+                <div class="contact-address">
+                    <img class="contact-icons" src="images/icons/address.svg" alt="">
+                    <div>
+                        <h3 class="mb-16">Address</h3>
+                        <address>
+                            lorem ipsum, 20 lorem ipsum dur,
+                            lorem, Ipsum , 829103
+                        </address>
+                    </div>
+                </div>
+                <div class="contact-email">
+                    <img class="contact-icons" src="images/icons/email.svg" alt="">
+                    <div>
+                        <h3 class="mb-16">Email</h3>
+                        <a href="mailto:contact@cr.com">contact@cr.com</a>
+                    </div>
+                </div>
+                <div class="contact-phone">
+                    <img class="contact-icons" src="images/icons/call.svg" alt="">
+                    <div>
+                        <h3 class="mb-16">Phone</h3>
+                        <a href="tel:+91932929192">93929292191</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="contactPage-hero--form">
+                <h2 class="section-heading mb-24">Get in touch</h2>
+                <form action="">
+                    <label for="name" class="formInput">
+                        Name
+                        <input name="name" type="text">
+                    </label>
+                    <!-- <label for="email" class="formInput">
+                        Email
+                        <input name="email" type="email" name="" id="">
+                    </label> -->
+                    <label for="phone" class="formInput">
+                        Phone
+                        <input name="phone" type="tel" name="" id="">
+                    </label>
+                    <label for="message" class="formInput">
+                        Message
+                        <textarea name="message"></textarea>
+                    </label>
+                    <button class="primary-link" type="submit">Send</button>
+
+                </form>
+
+            </div>
 
 
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-para">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos omnis doloremque harum debitis.
+                    Sint fuga consectetur fugit dolores possimus officiis quas alias facilis tempora cupiditate iusto
+                    similique vel, adipisci nostrum aliquam earum asperiores, laboriosam corporis!</p>
+            </div>
+            <div class="footer-content mb-24">
+                <div class="footer-content--logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="footer-content--action">
+                    <ul class="footer-links mb-24">
+                        <li><a href="/products.html">Projects</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                    <a href="" class="primary-link-small mb-24">Contact Us</a>
+                    <address>
+                        Lorem ipsum dolor sit, <br>
+                        amet consectetur adipisicing elit. <br>
+                        Ex eligendi odit ipsam dignissimos
+                    </address>
+                </div>
+            </div>
+            <p class="footer-copy">
+                Copyright 2021 Creative Architects
+            </p>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 

@@ -64,6 +64,7 @@ body {
   color: #374047;
   font-weight: 400;
   font-family: "PT Sans", sans-serif;
+  line-height: 1.5;
 }
 
 h1,
@@ -844,7 +845,11 @@ a {
   border-radius: 0.25rem;
   overflow-x: hidden;
   overflow-y: hidden;
-  margin-bottom: 5vw;
+}
+@media (max-width: 900px) {
+  .aboutHero-left--image {
+    margin-bottom: 5vw;
+  }
 }
 .aboutHero-right {
   width: calc(65% - 2.5vw);
@@ -1021,6 +1026,99 @@ a {
 }
 .aboutServices-content--com > div {
   width: 50%;
+}
+
+.contactPage-hero {
+  width: 100vw;
+  padding: 10vw 5vw;
+  align-items: stretch;
+  background-image: url("images/contactPage-hero.jpg");
+}
+.contactPage-hero--content {
+  padding-top: 5vw;
+}
+.contactPage-hero--content h2 {
+  color: #f9f9fa;
+}
+.contactPage-hero--form {
+  padding: 5vw;
+  background-color: rgba(249, 249, 250, 0.86);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.25rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.contactPage-hero--form form button {
+  width: 100%;
+  display: block;
+}
+.contactPage-hero--form form button:focus {
+  outline: none;
+}
+.contactPage-hero--form form button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(76, 0, 184, 0.4);
+}
+
+.contact-phone,
+.contact-email,
+.contact-address {
+  padding: 1.6rem;
+  background-color: rgba(249, 249, 250, 0.86);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 2.5vw;
+}
+.contact-phone img,
+.contact-email img,
+.contact-address img {
+  height: 2.8rem;
+  display: inline-block;
+  margin-right: 1.6rem;
+}
+.contact-phone > div h3,
+.contact-email > div h3,
+.contact-address > div h3 {
+  font-size: 2.1rem;
+}
+.contact-phone > div a,
+.contact-email > div a,
+.contact-address > div a {
+  color: #4c00b8;
+}
+
+.contact-icons {
+  width: 2.1rem;
+  display: block;
+}
+
+.formInput {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.formInput input,
+.formInput textarea {
+  display: block;
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 400;
+  padding: 0.8rem;
+  margin-top: 0.8rem;
+  border: 2px solid #4c00b8;
+}
+.formInput input:focus,
+.formInput textarea:focus {
+  outline: none;
+}
+.formInput input:focus-visible,
+.formInput textarea:focus-visible {
+  box-shadow: 0 0 0 3px rgba(76, 0, 184, 0.4);
+}
+.formInput textarea {
+  height: 20rem;
 }
 
 .primary-link {
