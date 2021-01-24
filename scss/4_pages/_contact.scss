@@ -52,6 +52,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 2.5vw;
+    box-shadow: $boxShadow-200;
+    border-radius: $bora-small;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     img {
         height: 2.8rem;
