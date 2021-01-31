@@ -1196,8 +1196,6 @@ a {
 }
 .projectsContainer .projectCard-pp--image {
   width: 50%;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 @media (max-width: 900px) {
   .projectsContainer .projectCard-pp--image {
@@ -1263,6 +1261,7 @@ a {
   grid-auto-flow: column;
   grid-template-rows: 100%;
   grid-auto-columns: 90%;
+  align-items: stretch;
   gap: 2.5vw;
   overflow: scroll hidden;
   overflow-x: scroll;
@@ -1276,10 +1275,20 @@ a {
   display: inline-block;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-radius: 0.25rem;
+  margin-bottom: 0.8rem;
+}
+@media (max-width: 900px) {
+  .projectCard-pp--image img {
+    height: auto;
+  }
 }
 .projectCard-pp--image::-webkit-scrollbar {
-  background-color: #5aa7de;
-  height: 5px;
+  background-color: transparent;
+  height: 0.4rem;
+}
+.projectCard-pp--image::-webkit-scrollbar-thumb {
+  background-color: #864adb;
+  border-radius: 0.2rem;
 }
 
 .primary-link {

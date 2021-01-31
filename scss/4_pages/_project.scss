@@ -80,8 +80,8 @@
             width: 50%;
             // box-shadow: $boxShadow-200;
             // border-radius: $bora-small;
-            overflow-x: hidden;
-            overflow-y: hidden;
+            //overflow-x: hidden;
+            //overflow-y: hidden;
 
             @include breakpoint(tab) {
                 width: 100%;
@@ -155,7 +155,7 @@
     grid-auto-flow: column;
     grid-template-rows: 100%;
     grid-auto-columns: 90%;
-    // align-items: stretch;
+    align-items: stretch;
     gap: 2.5vw;
     overflow: scroll hidden;
     overflow-x: scroll;
@@ -171,10 +171,22 @@
         display: inline-block;
         box-shadow: $boxShadow-200;
         border-radius: $bora-small;
+        margin-bottom: 0.8rem;
+
+        @include breakpoint(tab) {
+            height: auto;
+        }
+
+        @include breakpoint(phone) {}
     }
 
     &::-webkit-scrollbar {
-        background-color: $primary-400;
-        height: 5px;
+        background-color: transparent;
+        height: 0.4rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $secondary-400;
+        border-radius: 0.2rem;
     }
 }
