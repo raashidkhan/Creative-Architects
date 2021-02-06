@@ -318,6 +318,15 @@ a {
   color: #006fbe;
 }
 
+.footer-socialLinks {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-socialLinks a img {
+  height: 3.2rem;
+  display: block;
+}
+
 .hero {
   width: 100vw;
   padding: 5vw;
@@ -584,7 +593,11 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   display: block;
+  margin-bottom: 0.4rem;
+}
+.project-card figcaption address {
   margin-bottom: 1.6rem;
+  color: #864adb;
 }
 .project-card img {
   max-height: 50rem;

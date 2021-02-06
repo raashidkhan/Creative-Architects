@@ -60,3 +60,14 @@
         color: $primary-600;
     }
 }
+
+.footer-socialLinks {
+    display: flex;
+    justify-content: space-between;
+
+
+    a img {
+        height: 3.2rem;
+        display: block;
+    }
+}

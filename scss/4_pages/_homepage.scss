@@ -298,7 +298,13 @@
             text-transform: uppercase;
             font-weight: 700;
             display: block;
+            margin-bottom: 0.4rem;
+
+        }
+
+        address {
             margin-bottom: 1.6rem;
+            color: $secondary-400;
         }
 
         span.desc {}
