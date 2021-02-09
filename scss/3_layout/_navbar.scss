@@ -19,6 +19,7 @@
     @include breakpoint(tab) {
         //backdrop-filter: none;
         padding: 0.8rem 5vw;
+        position: fixed;
     }
 
     &-logo {
